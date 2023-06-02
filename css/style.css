@@ -1,0 +1,78 @@
+.nav-link {
+    color: black;
+}
+
+.profile-img {
+    height: 300px;
+    border-radius: 50%;
+  }
+
+.profile-imgl {
+    height: 100px;
+    border-radius: 50%;
+}
+
+.spotify-link {
+    color: black;
+}
+
+.bi-spotify {
+    color: #000;
+}
+
+.anch {
+    color: white;
+    text-decoration: none;
+
+}
+
+
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+body{ min-height:100vh; margin:0; position:relative; }
+header{ min-height:50px; }
+
+/* Trick: */
+body {
+  position: relative;
+}
+
+body::after {
+  content: '';
+  display: block;
+  height: 50px; /* Set same as footer's height */
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  height: 50px;
+}
